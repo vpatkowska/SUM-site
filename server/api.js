@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const router = express.Router();
 const serverless = require("serverless-http");
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
-var price = 29.99;
+var price = 15.99
 
 var app = express();
 app.use(bodyParser.json());
