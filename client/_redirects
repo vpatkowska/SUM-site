@@ -1,1 +1,2 @@
 /charge /.netlify/functions/api/charge 200
+/submit /.netlify/functions/api/submit 200

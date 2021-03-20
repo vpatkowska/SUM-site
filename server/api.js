@@ -10,6 +10,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Stripe payment route
+app.post("/submit", async (req, res) => {
+  res.redirect("/payment-page");
+});
+
+//Stripe payment route
 app.post("/charge", async (req, res) => {
   const token = req.body.stripeToken;
 
