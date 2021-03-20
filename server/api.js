@@ -9,9 +9,9 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//Stripe payment route
+//Email submission
 app.post("/submit", async (req, res) => {
-  res.redirect("/payment-page");
+  res.redirect("/reservation-page");
 });
 
 //Stripe payment route
